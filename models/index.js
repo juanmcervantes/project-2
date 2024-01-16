@@ -1,6 +1,6 @@
 const models = {
   usersModel: require(`./mysql/users`),
-  tracksModel: require(`./mysql/tracks`),
+  tracksModel: require(`./mysql/notes`),
 };
 
 module.exports = models;
