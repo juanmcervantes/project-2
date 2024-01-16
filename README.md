@@ -21,7 +21,7 @@ The user information is stored in the mySQL database, in our case, we use Larago
   To install all the node dependecies enter npm i, then enter npm run dev and go to port 4040 in your browser.
 
 # USAGE INFORMATION
-  Create an account, fill in the login field and use the calendar to create and save notes.
+  Create an account with your name, email, password and age; fill in the login section and use the calendar to create, save and delete notes.
 
 # CONTRIBUTION GUIDELINES
   Carolina Sandoval - Controllers, models, mySQL connection, authentication back-end, and front-end login page
