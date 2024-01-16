@@ -1,0 +1,289 @@
+/* HEADER AND BODY */
+@font-face {
+  font-family: "RobotoLight";
+  src:url('../fonts/roboto/Roboto-Light.ttf');
+}
+@font-face {
+  font-family: "RobotoBlack";
+  src:url('../fonts/roboto/Roboto-Black.ttf');
+}
+@font-face {
+  font-family: "RobotoRegular";
+  src:url('../fonts/roboto/Roboto-Regular.ttf');
+}
+* {
+  padding: 0;
+  margin:0;
+  font-family:'RobotoRegular';
+  font-weight:lighter;
+  color: #3f3d56;
+  box-sizing: border-box;
+} 
+
+
+body {
+  background-color: #cbc8e0;
+}
+
+.signIn-section {
+  margin-top: 100px;
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-container {
+  width: 1200px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.main-image {
+  width: 600px;
+  height: 500px;
+  background: url('undraw_remotely_2j6y.svg') #0000;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+h1 {
+  font-size: 24pt;
+  color: white;
+  padding-left: 20px;
+}
+
+/* BUTTON */
+
+.button__text {
+  padding: 0 24px;
+  height: 100%;
+  text-decoration: none;
+  color: white;
+}
+
+.button:hover {
+  opacity: 0.8;
+}
+.button {
+  height: 50px;
+  padding: 0;
+  border:none;
+  outline: none;
+  border-radius: 5px;
+  overflow:hidden;
+  font-size: 20px;
+  font-weight: 500;
+  cursor:pointer;
+}
+
+#floatingInput {
+  font-size: 1px;
+}
+
+#button-sign-in {
+  background: #6c63ff;
+}
+
+#button-create-account {
+  margin-top: 10px;
+  background: #1eb37d;
+}
+
+#button-sign-up {
+  background: #6c63ff;
+  width: 200px;
+}
+
+      /* Class to set the sign up button inside its space in the form */
+.btn-register {
+  display: flex;
+  flex-direction: flex;
+  justify-content: center;
+  align-items: end;
+  margin-top: 40px;
+}
+
+/* SIGN IN FORM  */
+
+
+.container-signIn {
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 400px;
+  height: 500px;
+  width: 100%;
+  background-color: #ffffff;
+  border-radius: 0px;
+  box-shadow: 0px 10px 10px rgba(0,0,0,0.2);
+}
+
+.title-signIn {
+  text-align: center;
+  font-size: 35px;
+  margin:0 0 10% 0;
+  font-weight: 500;
+}
+.text-signIn {
+  text-align: center;
+  font-size: 17px;
+  margin:0 0 10% 0;
+  font-weight: 500;
+  color: #aab7c0;
+  font-family: 'RobotoLight'
+}
+
+.error {
+  color: red;
+  font-family: 'RobotoLight';
+  text-align: center;
+  margin-top: 10px;
+}
+
+.listi {
+  font-weight: bold;
+}
+.listi2 {
+  font-family: 'RobotoLight';
+  font-size: 20px;
+}
+
+.user-signIn {
+  display: flex;
+  flex-direction:column;
+  flex-wrap:wrap;
+
+}
+.user-signIn .input-box-signIn .input-title-signIn {
+  margin-bottom: 10px;
+  font-size: 15px;
+}
+
+.user-signIn .input-box-signIn input{
+
+  width: 100%;
+  height: 50px;
+  outline: none;
+  border:0;
+  font-size: 16px;
+  font-family: "RobotoLight";
+  font-size: 15px;
+  border-bottom: 1px solid #cdcfd6;
+  padding-left: 15px;
+}
+
+#emailLogin {
+  margin-bottom: 15px;
+}
+#passwordLogin{
+  margin-bottom: 40px;
+}
+
+.hide{
+  display: none;
+}
+
+/* CREATE ACCOUNT */
+.container-create-account {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+}
+
+.new-to {
+  font-size: 15px;
+  font-family: 'RobotoLight'
+}
+
+/* OPEN AND CLOSE MODAL */
+
+.close-modal {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  color: #333333;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.escondido{
+  display: none;
+}
+
+.hidden {
+  display: none;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 50;
+  background-color: #ffff;
+
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(3px);
+  z-index: 5;
+}
+
+/* SIGN UP FORM */
+
+.container-signUp{
+  width: 400px;
+  padding: 2rem;
+}
+
+.title-signUp {
+  text-align: center;
+  font-size: 30px;
+  margin:0 0 10% 0;
+  font-weight: 500;
+}
+
+#legend {
+  font-size: 30px;
+  font-family: 'RobotoRegular';
+}
+
+.container-signUp form .user-info-signUp {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+form .user-info-signUp .input-box-signUp {
+  margin-bottom: 15px;
+  width: 80%;
+}
+
+.user-info-signUp .input-box-signUp input {
+  width: 100%;
+  height: 50px;
+  outline: none;
+  border:0;
+  font-size: 16px;
+  font-family: "RobotoLight";
+  font-size: 15px;
+  border-bottom: 1px solid #cdcfd6;
+  padding-left: 15px;
+}
+
+
+
+
+

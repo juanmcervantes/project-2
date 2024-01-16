@@ -1,3 +1,15 @@
+@font-face {
+  font-family: "RobotoLight";
+  src:url('../fonts/roboto/Roboto-Light.ttf');
+}
+@font-face {
+  font-family: "RobotoBlack";
+  src:url('../fonts/roboto/Roboto-Black.ttf');
+}
+@font-face {
+  font-family: "RobotoRegular";
+  src:url('../fonts/roboto/Roboto-Regular.ttf');
+}
 :root{
   --primary-clr: #b38add;
 }
@@ -6,7 +18,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'poppins';
 }
 
 body {
@@ -28,13 +40,15 @@ body {
   color: #ffffff;
   display: flex;
   border-radius: 10px;
-  background-color: #373c4f;
+  background-color: #3f3d56;
 }
 
 .left {
   width: 60%;
   padding: 20px;
 }
+
+
 
 .calendar {
   position: relative;
@@ -461,7 +475,7 @@ body {
   outline: none;
   border: none;
   color: #ffffff;
-  background-color: var(--primary-clr);
+  background-color: #1eb37d;
   border-radius: 5px;
   cursor: pointer;
   padding: 5px 10px;
