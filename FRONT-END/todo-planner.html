@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" contet="IE-edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="./assets/todo-planner.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link
+        href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <title>Project: ToDo Planner</title>
+  </head>
+  
+  <body>
+    <div class="container">
+      <div class="left">
+        <div class="calendar">
+          <div class="month">
+            <i class="fa fa-angle-left prev"></i>
+            <div class="date"></div>
+            <i class="fa fa-angle-right next"></i>
+          </div>
+          <div class="weekdays">
+            <div>sun</div>
+            <div>mon</div>
+            <div>tue</div>
+            <div>wed</div>
+            <div>thu</div>
+            <div>fri</div>
+            <div>sat</div>
+          </div>
+          <div class="month-days">
+            <!-- <div class="day prev-month-date">30</div>
+            <div class="day prev-month-date">31</div>
+            <div class="day">1</div>
+            <div class="day">2</div>
+            <div class="day">3</div>
+            <div class="day">4</div>
+            <div class="day">5</div>
+            <div class="day">6</div>
+            <div class="day">7</div>
+            <div class="day event">8</div>
+            <div class="day">9</div>
+            <div class="day">10</div>
+            <div class="day">11</div>
+            <div class="day">12</div>
+            <div class="day">13</div>
+            <div class="day event active">14</div>
+            <div class="day today active">15</div>
+            <div class="day">16</div>
+            <div class="day">17</div>
+            <div class="day">18</div>
+            <div class="day">19</div>
+            <div class="day">20</div>
+            <div class="day">21</div>
+            <div class="day event">22</div>
+            <div class="day">23</div>
+            <div class="day">24</div>
+            <div class="day">25</div>
+            <div class="day">26</div>
+            <div class="day">27</div>
+            <div class="day">28</div>
+            <div class="day">29</div>
+            <div class="day">30</div>
+            <div class="day next-month">1</div>
+            <div class="day next-month">2</div>
+            <div class="day next-month">3</div> -->
+          </div>
+          <div class="goto-today">
+            <div class="goto">
+              <input type="text" placeholder="mm/yyyy" class="date-input">
+              <button class="go-to-bttn">SEARCH</button>
+            </div>
+            <button class="today-bttn">TODAY</button>
+          </div>
+        </div>
+      </div>
+      <div class="right">
+        <div class="today-date">
+          <div class="current-weekday"></div>
+          <div class="current-date"></div>
+        </div>
+        <div class="events">
+          <!-- <div class ="event">
+            <div class ="title">
+              <i class="fas fa-circle"></i>
+              <h3 class="event-title">Event 1</h3>
+            </div>
+            <div class="event-time">10:00AM - 12:00PM</div>
+          </div>
+          <div class="event">
+            <div class="title">
+              <i class="fas fa-circle"></i>
+              <h3 class="event-title">Event 1</h3>
+            </div>
+            <div class="event-time">10:00AM - 12:00PM</div>
+          </div>
+          <div class="event">
+            <div class="title">
+              <i class="fas fa-circle"></i>
+              <h3 class="event-title">Event 1</h3>
+            </div>
+            <div class="event-time">10:00AM - 12:00PM</div>
+          </div>
+          <div class="event">
+            <div class="title">
+              <i class="fas fa-circle"></i>
+              <h3 class="event-title">Event 1</h3>
+            </div>
+            <div class="event-time">10:00AM - 12:00PM</div>
+          </div> -->
+        </div>
+        <div class="add-event-container active">
+          <div class="add-event-header">
+            <div class="title">ADD TO PLANNER</div>
+            <i class="fas fa-times close"></i>
+          </div>
+          <div class="add-event-body">
+            <div class="add-event-input">
+              <input 
+              type="text" 
+              placeholder="Write your task here..." 
+              class="event-name"/>
+            </div>
+            <div class="add-event-input">
+              <input 
+              type="text" 
+              placeholder="Start Time" 
+              class="start-time" />
+            </div>
+            <div class="add-event-input">
+              <input 
+              type="text" 
+              placeholder="End Time" 
+              class="end-time" />
+            </div>
+          </div>
+          <div class="add-event-footer">
+            <button class="add-event-bttn">ADD TO PLANNER</button>
+          </div>
+        </div>
+      </div>
+      <button class="add-event">
+        <i class="fa fa-plus"></i>
+      </button>
+    </div>
+    <script src="./assets/todo-planner.js"></script>
+  </body>
+</html>
